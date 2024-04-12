@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce product page</title>
+
+    <!-- Styling Files And CSS Librarys -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normilize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Font From Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <i class="fa-solid fa-bars menu-icon"></i>
+          <img src="images/logo.svg" alt="" class="logo" />
+          <ul class="links">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="card">
+          <div class="shopping-icon">
+            <img src="images/icon-cart.svg" alt="" id="shopping" />
+            <div class="count">0</div>
+          </div>
+          <div class="basket">
+            <div class="haed">
+              <h4>Card</h4>
+            </div>
+            <div class="body">
+            </div>
+          </div>
+          <img src="images/image-avatar.png" alt="Avatar" />
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Side Menu -->
+    <div class="side-menu">
+      <img src="images/icon-close.svg" alt="" id="close" />
+      <ul class="side-links">
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <!-- End Side Menu -->
+    <!-- Start Product Page -->
+    <div class="product-page">
+      <div class="container">
+        <div class="product-view">
+          <div class="product-img">
+            <img onclick="previousBtn()" src="images/icon-previous.svg" alt="" id="previous" />
+            <img src="images/image-product-1.jpg" alt="" id="product-view" />
+            <img onclick="nextBtn()" src="images/icon-next.svg" alt="" id="next" />
+          </div>
+          <div class="image-slider">
+            <div class="box active" data-src="images/image-product-1.jpg">
+              <img src="images/image-product-1-thumbnail.jpg" alt="" />
+            </div>
+            <div class="box" data-src="images/image-product-2.jpg">
+              <img src="images/image-product-2-thumbnail.jpg" alt="" />
+            </div>
+            <div class="box" data-src="images/image-product-3.jpg">
+              <img src="images/image-product-3-thumbnail.jpg" alt="" />
+            </div>
+            <div class="box" data-src="images/image-product-4.jpg">
+              <img src="images/image-product-4-thumbnail.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="product-info">
+          <span>Sneakers Company</span>
+          <h2>Fall Limited Edition Sneakers</h2>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <div class="after">
+              <h3>$125.00</h3>
+              <span>50%</span>
+            </div>
+            <p class="before">$250.00</p>
+          </div>
+          <div class="cart">
+            <div class="count">
+              <img src="images/icon-plus.svg" alt="" class="plus" />
+              <span class="amount">0</span>
+              <img src="images/icon-minus.svg" alt="" class="minus" />
+            </div>
+            <button class="main-btn" id="addToCard">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Product Page -->
+    <!-- Footer -->
+    <footer>
+      <div>Coded by <a target="_blank" href="https://github.com/Andrew801168">Zaro</a></div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
